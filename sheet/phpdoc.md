@@ -9,6 +9,7 @@ These tags can be used in any PHPDoc context.
 ### `@deprecated`
 - **Description**: Indicates that the method, class, function, or property is deprecated and should not be used.
 - **Example**:
+
   ```php
   /**
    * @deprecated Use newFunction() instead.
@@ -19,6 +20,7 @@ These tags can be used in any PHPDoc context.
 ### `@since`
 - **Description**: Specifies the version when the element was added to the codebase.
 - **Example**:
+
   ```php
   /**
    * @since 2.0.0
@@ -29,6 +31,7 @@ These tags can be used in any PHPDoc context.
 ### `@see`
 - **Description**: Creates a reference to a related piece of code, such as another method, class, or documentation.
 - **Example**:
+
   ```php
   /**
    * @see OtherClass::otherFunction() For related functionality.
@@ -39,6 +42,7 @@ These tags can be used in any PHPDoc context.
 ### `@link`
 - **Description**: Provides a URL for additional information or external documentation.
 - **Example**:
+
   ```php
   /**
    * @link https://www.example.com More information.
@@ -49,6 +53,7 @@ These tags can be used in any PHPDoc context.
 ### `@todo`
 - **Description**: Marks a task or feature that needs to be implemented or refined in the code.
 - **Example**:
+
   ```php
   /**
    * @todo Implement this function.
@@ -59,6 +64,7 @@ These tags can be used in any PHPDoc context.
 ### `@example`
 - **Description**: Provides an example of how the code should be used.
 - **Example**:
+
   ```php
   /**
    * Example usage:
@@ -70,6 +76,7 @@ These tags can be used in any PHPDoc context.
 ### `@author`
 - **Description**: Identifies the author of the piece of code.
 - **Example**:
+
   ```php
   /**
    * @author John Doe
@@ -80,6 +87,7 @@ These tags can be used in any PHPDoc context.
 ### `@license`
 - **Description**: Indicates the licensing information under which the code is released.
 - **Example**:
+
   ```php
   /**
    * @license MIT
@@ -93,6 +101,7 @@ Primarily used with classes or interfaces.
 ### `@method`
 - **Description**: Describes a method in a class, especially used for magic methods in classes using the `__call` magic method.
 - **Example**:
+
   ```php
   /**
    * @method string getString() Returns a string
@@ -103,6 +112,7 @@ Primarily used with classes or interfaces.
 ### `@property`
 - **Description**: Describes a property in a class, especially used for magic properties in classes using the `__get` and `__set` magic methods.
 - **Example**:
+
   ```php
   /**
    * @property int $id Identifier
@@ -116,6 +126,7 @@ Used with class properties.
 ### `@var`
 - **Description**: Documents the type of a class property.
 - **Example**:
+
   ```php
   class MyClass {
     /**
@@ -131,6 +142,7 @@ Used with methods and functions.
 ### `@param`
 - **Description**: Describes a parameter of a function or method, including its type and purpose.
 - **Example**:
+
   ```php
   /**
    * @param string $param Description of the parameter.
@@ -141,6 +153,7 @@ Used with methods and functions.
 ### `@return`
 - **Description**: Specifies the type and description of the return value of functions and methods.
 - **Example**:
+
   ```php
   /**
    * @return int The result of the calculation.
@@ -151,6 +164,7 @@ Used with methods and functions.
 ### `@throws`
 - **Description**: Indicates the exceptions that a function or method may throw.
 - **Example**:
+
   ```php
   /**
    * @throws Exception When something goes wrong.
@@ -161,6 +175,7 @@ Used with methods and functions.
 ### `@inheritdoc`
 - **Description**: Indicates that the documentation for a method or property should be inherited from the parent class or interface.
 - **Example**:
+
   ```php
   class ChildClass extends ParentClass {
     /**
