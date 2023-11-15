@@ -4,4 +4,4 @@ This project contains personal cheatsheets for various topics. The cheatsheets a
 
 ## Overview
 
-[PHPDoc](sheet/phpdoc.md) - DocBlock commenting in PHP with Syntax and Tags reference
+[PHPDoc](sheets/phpdoc.md) - DocBlock commenting in PHP with Syntax and Tags reference
