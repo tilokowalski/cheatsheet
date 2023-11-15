@@ -1,7 +1,40 @@
-
 # PHPDoc
 
 This document categorizes PHPDoc tags and provides detailed descriptions along with example usage for each tag.
+
+## General Example
+
+  ```php
+  /**
+   * Finds the maximum value in an array.
+   *
+   * Iterates through each element of the array, comparing each value with the current maximum. 
+   * If a larger value is found, it updates the maximum. Throws an exception if the array is empty.
+   *
+   * @param array $numbers An array of integers to search for the maximum value.
+   * 
+   * @return int $max The maximum value found in the array.
+   * 
+   * @throws InvalidArgumentException If the input array is empty.
+   */
+  function findMaxInArray(array $numbers) {
+      if (empty($numbers)) {
+          throw new InvalidArgumentException('Input array cannot be empty.');
+      }
+
+      $max = $numbers[0];
+
+      foreach ($numbers as $num) {
+          if ($num > $max) {
+              $max = $num;
+          }
+      }
+
+      return $max;
+  }
+  ```
+
+# Tag Reference
 
 ## Any
 These tags can be used in any PHPDoc context.
@@ -67,7 +100,6 @@ These tags can be used in any PHPDoc context.
 
   ```php
   /**
-   * Example usage:
    * @example $object = new MyClass();
    */
   class MyClass {}
@@ -130,9 +162,9 @@ Used with class properties.
   ```php
   class MyClass {
     /**
-     * @var string
+     * @var string $property Description of the property.
      */
-    public $property;
+    public string $property;
   }
   ```
 
@@ -147,7 +179,7 @@ Used with methods and functions.
   /**
    * @param string $param Description of the parameter.
    */
-  function myFunction($param) {}
+  function myFunction(string $param) {}
   ```
 
 ### `@return`
